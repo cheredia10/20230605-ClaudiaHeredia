@@ -1,0 +1,179 @@
+  267  git status
+  268  git commit -m "Commit 03 de ClaudiaHeredia"
+  269  git log
+  270  git add .
+  271  git status
+  272  git commit -m "Commit 03 de ClaudiaHeredia"
+  273  git push feature01 feature02
+  274  git push origin feature02
+  275  git add .
+  276  git status
+  277  git commit -m "Commit 03 de ClaudiaHeredia"
+  278  git push origin feature02
+  279  git checkout main
+  280  mv comandos.txt comandosUtilizados.txt
+  281  history > comandosUtilizados.txt
+  282  git checkout feature01
+
+mkdir 20230610-ClaudiaHeredia
+cd 20230610-ClaudiaHeredia
+touch comandos.txt index.html
+git init
+git remote add origin https://github.com/cheredia10/20230605-ClaudiaHeredia.git
+
+heredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos.txt
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add .
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos.txt
+        new file:   index.html
+        new file:   main.js
+
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git commit -m "commit 01 de ClaudiaHeredia" 
+[main (root-commit) 7d75e1d] commit 01 de ClaudiaHeredia
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 247 bytes | 123.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/cheredia10/20230605-ClaudiaHeredia.git
+ * [new branch]      main -> main
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git log
+commit 7d75e1d87db7fde152bd4943074f7a105cc78146 (HEAD -> main, origin/main)
+Author: Claudia Heredia <cheredia.colegio@gmail.com>
+Date:   Mon Jun 5 21:34:24 2023 -0500
+
+    commit 01 de ClaudiaHeredia
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git branch feature01
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git switch feature01
+Switched to branch 'feature01'
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % mkdir terminal hardware
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % touch hardware/resumen.txt terminal/resumen.t
+xt
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add .
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git commit -m "commit 02 de ClaudiaHeredia"
+[feature01 57cea2c] commit 02 de ClaudiaHeredia
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 terminal/resumen.txt
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git push origin feature01
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 366.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/cheredia10/20230605-ClaudiaHeredia/pull/new/feature01
+remote: 
+To https://github.com/cheredia10/20230605-ClaudiaHeredia.git
+ * [new branch]      feature01 -> feature01
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch feature01
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git branch feature02
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git checkout feature02
+Switched to branch 'feature02'
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % touch terminal/resumen.txt hardware/resumen.t
+xt
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch feature02
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add .
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch feature02
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git commit -m "Commit 03 de ClaudiaHeredia"
+On branch feature02
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git log
+commit 57cea2c2133f9ba02e2ba6b819e6dea77af4dbff (HEAD -> feature02, origin/feature01, feature01)
+Author: Claudia Heredia <cheredia.colegio@gmail.com>
+Date:   Mon Jun 5 21:37:49 2023 -0500
+
+    commit 02 de ClaudiaHeredia
+
+commit 7d75e1d87db7fde152bd4943074f7a105cc78146 (origin/main, main)
+Author: Claudia Heredia <cheredia.colegio@gmail.com>
+Date:   Mon Jun 5 21:34:24 2023 -0500
+
+    commit 01 de ClaudiaHeredia
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add .
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch feature02
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git commit -m "Commit 03 de ClaudiaHeredia"
+On branch feature02
+nothing to commit, working tree clean
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git push feature01 feature02
+fatal: 'feature01' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git push origin feature02
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature02' on GitHub by visiting:
+remote:      https://github.com/cheredia10/20230605-ClaudiaHeredia/pull/new/feature02
+remote: 
+To https://github.com/cheredia10/20230605-ClaudiaHeredia.git
+ * [new branch]      feature02 -> feature02
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git add .
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git status
+On branch feature02
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hardware/resumen.txt
+        modified:   terminal/resumen.txt
+
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git commit -m "Commit 03 de ClaudiaHeredia"
+[feature02 ff33f0c] Commit 03 de ClaudiaHeredia
+ 2 files changed, 8 insertions(+)
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git push origin feature02
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 480 bytes | 160.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cheredia10/20230605-ClaudiaHeredia.git
+   57cea2c..ff33f0c  feature02 -> feature02
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git checkout main
+Switched to branch 'main'
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % mv comandos.txt comandosUtilizados.txt
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % history > comandosUtilizados.txt 
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % git checkout feature01
+D       comandos.txt
+Switched to branch 'feature01'
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia % history > "comandosUtilizados.txt" 
+cheredia@mbp-de-claudia 20230605-ClaudiaHeredia %
