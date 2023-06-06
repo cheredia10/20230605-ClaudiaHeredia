@@ -1,0 +1,5 @@
+git add .
+git push origin main
+git commit -m
+git status
+git log

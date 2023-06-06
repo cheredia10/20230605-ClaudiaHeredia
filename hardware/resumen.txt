@@ -1,0 +1,3 @@
+Microprocesador
+Placa Madre
+RAM
